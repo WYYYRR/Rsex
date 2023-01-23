@@ -74,7 +74,7 @@ YAFA_NAME = getenv(
     "YAFA_NAME", "TeAm FoX"
 )  # اسم قناتك
 YAFA_CHANNEL = getenv(
-   " YAFA_CHANNEL", "https://t.me/9L9XX"
+   " YAFA_CHANNEL", "https://t.me/L9L9XX"
 )  # رابط قناتك
 SUPPORT_CHANNEL = getenv(
     "SUPPORT_CHANNEL", "https://t.me/L9L9XX"
