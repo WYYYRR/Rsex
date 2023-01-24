@@ -175,7 +175,7 @@ async def ahmad(client: Client, message: Message):
         reply_markup=InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton(" ‹ 𝖳𝗐𝖲 𝖱𝗌𝖤𝗑𝖲 ›", url=f"{YAFA_CHANNEL}"),
+                InlineKeyboardButton(" ‹ TeAm FoX ›", url=f"{YAFA_CHANNEL}"),
                 ],[
          #       InlineKeyboardButton(f"‹ اضف البوت لقناتك ›", url=f"https://t.me/{BOT_USERNAME}?startchannel=true"),
                 ],[
@@ -195,8 +195,8 @@ async def ahmad(client: Client, message: Message):
 )
 async def ahmad(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/170e2fcb729ba3f244afa.jpg",
-        caption=f"""[Developer](https://t.me/vvvvvg)\n\n[Source Channel](https://t.me/vvvznn)\n\n[𝖳𝖾𝖺𝗆 𝗄𝖺𝖽𝗂](https://t.me/IFlFIGBOT)\n\n[ Exp RsEXS ](https://t.me/TwS_RsExS)[𝖣𝖾𝗏 𝖬𝗎𝗌𝗂𝖼](https://t.me/PPF22)""",
+        photo=f"https://telegra.ph/file/185ff2702adb51c3cd1e9.jpg",
+        caption=f"""[Developer](https://t.me/TTTT_TB)\n\n[Source Channel](https://t.me/L9L9XX)\n\n[TwS FoX](https://t.me/Diller1_bot)\n\n[ Exp Fox ](https://t.me/EVAN_BOTT)[𝖣𝖾𝗏 𝖬𝗎𝗌𝗂𝖼](https://t.me/TTTT_TB)""",
         reply_markup=InlineKeyboardMarkup(
         [
             [
