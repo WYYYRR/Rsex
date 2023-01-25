@@ -202,7 +202,7 @@ async def ahmad(client: Client, message: Message):
             [
                 InlineKeyboardButton("𝙳𝙴𝚅", url=f"{SUDO_USER}",
                 ),
-                InlineKeyboardButton(f"𝚂𝙾𝚄𝚁𝙲𝙴", url=f"{YAFA_CHANNEL}",
+                InlineKeyboardButton("𝚂𝙾𝚄𝚁𝙲𝙴", url=f"{YAFA_CHANNEL}",
                 ),
             ],
             [
