@@ -1,11 +1,4 @@
-#
-# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
-#
-# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
-#
-# All rights reserved.
+
 
 import re
 import sys
@@ -16,19 +9,20 @@ from pyrogram import filters
 
 load_dotenv()
 
-# Get it from my.telegram.org
-API_ID = int(getenv("API_ID", ""))
-API_HASH = getenv("API_HASH", "")
+# ابي ايدي
+API_ID = int(getenv("API_ID", "12082238"))
+#البي هاش
+API_HASH = getenv("API_HASH", "ca919cabc96d3b001cd12d7d09970e30")
 
-## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN", "")
+## توكن
+BOT_TOKEN = getenv("BOT_TOKEN", "5695973223:AAGcmuPQY-8uX_PJxeAtoi3y91Kv8YTEf3o")
 
-# Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
-MONGO_DB_URI = getenv("MONGO_DB_URI", "")
+# القاعه
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://EITHON:mahmadeerg@eithon.28dum.mongodb.net/?retryWrites=true&w=majority")
 
 # Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 60 mins.
 DURATION_LIMIT_MIN = int(
-    getenv("DURATION_LIMIT", "150")
+    getenv("DURATION_LIMIT", "60")
 )  # Remember to give value in Minutes
 
 # Duration Limit for downloading Songs in MP3 or MP4 format from bot
@@ -36,15 +30,15 @@ SONG_DOWNLOAD_DURATION = int(
     getenv("SONG_DOWNLOAD_DURATION_LIMIT", "180")
 )  # Remember to give value in Minutes
 
-# You'll need a Private Group ID for this.
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
+# ايدي جروب المتابعه.
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001636062641"))
 
-# A name for your Music bot.
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "")
+# اسم البوت
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "Music EvaN Team")
 
-# Your User ID.
+# ايدي المطور
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "").split())
+    map(int, getenv("OWNER_ID", "5683932668").split())
 )  # Input type must be interger
 
 # Get it from http://dashboard.heroku.com/account
@@ -53,38 +47,31 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 # You have to Enter the app name which you gave to identify your  Music Bot in Heroku.
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 
-# For customized or modified Repository
+#لنك الجت هب
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/WYYYRR/Rsex",
+    "https://github.com/WYYYRR/SORR",
 )
-BOT_USERNAME = getenv(
-    "BOT_USERNAME", "S9SSS_BOT"
-)  # معرف بوتك بدون @
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
-# GIT TOKEN ( if your edited repo is private)
-GIT_TOKEN = getenv("GIT_TOKEN", None)
+# GIT TOKEN ( توكن الجت هب)
+GIT_TOKEN = getenv("GIT_TOKEN", "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")
 
 # Only  Links formats are  accepted for this Var value.
-CHANNEL_SUDO = getenv(
-    "CHANNEL_SUDO", "L9L9XX"
-)  # معرف قناتك بدون @
-YAFA_NAME = getenv(
-    "YAFA_NAME", "TeAm FoX"
-)  # اسم قناتك
-YAFA_CHANNEL = getenv(
-   " YAFA_CHANNEL", "https://t.me/L9L9XX"
-)  # رابط قناتك
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", "https://t.me/L9L9XX"
-)  # رابط قناتك
+    "SUPPORT_CHANNEL", "https://t.me/L9L9XX" 
+)  
 SUPPORT_GROUP = getenv(
     "SUPPORT_GROUP", "https://t.me/SSS_S4S" 
-)  # رابط كروبك
+)  
+
+# الانضام
+MUST_JOIN = getenv(
+    "MUST_JOIN", "L9L9XX" 
+)  
 
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
-AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "true")
+AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", None)
 
 # Time after which you're assistant account will leave chats automatically.
 AUTO_LEAVE_ASSISTANT_TIME = int(
@@ -119,7 +106,7 @@ SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", None)
 SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", None)
 
 # Maximum number of video calls allowed on bot. You can later set it via /set_video_limit on telegram
-VIDEO_STREAM_LIMIT = int(getenv("VIDEO_STREAM_LIMIT", "10"))
+VIDEO_STREAM_LIMIT = int(getenv("VIDEO_STREAM_LIMIT", "3"))
 
 # Maximum Limit Allowed for users to save playlists on bot's server
 SERVER_PLAYLIST_LIMIT = int(getenv("SERVER_PLAYLIST_LIMIT", "30"))
@@ -129,25 +116,25 @@ PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", "25"))
 
 # Cleanmode time after which bot will delete its old messages from chats
 CLEANMODE_DELETE_MINS = int(
-    getenv("CLEANMODE_MINS", "2")
+    getenv("CLEANMODE_MINS", "548555151551544444400000000000000002222222222222222222222999999999999999999999999999999999999999999999999997777777777777777777777777777777788888888888888888888888855555555555556666666666666666666")
 )  # Remember to give value in Seconds
 
 
 # Telegram audio  and video file size limit
 
 TG_AUDIO_FILESIZE_LIMIT = int(
-    getenv("TG_AUDIO_FILESIZE_LIMIT", "104857600")
+    getenv("TG_AUDIO_FILESIZE_LIMIT", "1419690087")
 )  # Remember to give value in bytes
 
 TG_VIDEO_FILESIZE_LIMIT = int(
-    getenv("TG_VIDEO_FILESIZE_LIMIT", "1073741824")
+    getenv("TG_VIDEO_FILESIZE_LIMIT", "1419690087")
 )  # Remember to give value in bytes
 
 # Chceckout https://www.gbmb.org/mb-to-bytes  for converting mb to bytes
 
 
-# You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
-STRING1 = getenv("STRING_SESSION", "")
+# كود الجلسه في اول وحده
+STRING1 = getenv("STRING_SESSION", "AgCrURtzoECCjFGcQXa1NOkY4_yNe6f5R3eI3wD0i37OhM_fI49CTve_iUix6FM70qg7nXm3vwsiFSUQ7wTSoBxu99SX8SrD3epMotmZRB49_DjybOeZqT6nYoHBf07IFz5jGjnlE1toy6Pn5YbKJO0Am1OX6EItGPET0ZS63GyKsfQtHR7EhfJqfXUIjY4EGihkLR51Qj_f2uZryIrS4eKWQ6cdYO_TphNAVWVyW6yrXkC-q7-QdbyhYn9oAIunqEY65i5zb0r8Q6m0ZmNORwl2wnMfEkxYVvw0EA2wvlPjZODyR9YJfmPa8RH8tY2U0R_hAmmM8pOv35X3YlCm1D5TAAAAATlV2foA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -176,8 +163,8 @@ clean = {}
 autoclean = []
 
 
-# Images
-START_IMG_URL = getenv("START_IMG_URL", "https://telegra.ph/file/0ffc6b2adaeff2f208191.jpg")
+# رابط. الصوره
+START_IMG_URL = getenv("START_IMG_URL", "https://telegra.ph/file/edee063a17a3938130c96.jpg")
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
